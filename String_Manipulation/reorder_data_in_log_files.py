@@ -11,6 +11,7 @@ class Solution:
                 digits.append(log)
             else:
                 letters.append(log)
+        # 문자(x.split()[1:])를 첫 번째 우선순위로 하고, 식별자(x.split()[0])를 두 번째 우선순위로 하여 정렬
         letters.sort(key=lambda x: (x.split()[1:], x.split()[0]))
 
         return letters + digits
