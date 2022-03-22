@@ -15,3 +15,8 @@ def twoSum(nums: List[int], target: int) -> List[int]:
             return [nums[left], nums[right]]
 
 print(twoSum([2, 15, 11, 7], 22))
+
+# result = [['a', 'b'], ['a', 'b'], ['b', 'a'], ['c', 'd']]
+# new_result = list(set(map(tuple, result)))
+# new_result = list(set([tuple(set(item)) for item in result]))
+# print(new_result)
